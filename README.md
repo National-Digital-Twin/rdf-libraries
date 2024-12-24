@@ -9,10 +9,10 @@ This is a monorepo, which contains sub-packages:
 
 ## Install
 
-This monorepo's sub-packages are published to https://www.npmjs.com/org/telicent-oss:
+This monorepo's sub-packages are published to https://npm.pkg.github.com:
 
 ```sh
-yarn install @telicent-oss/ontologyservice
+yarn install @national-digital-twin/ontologyservice
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ yarn install @telicent-oss/ontologyservice
 A simple example:
 
 ```tsx
-import OntologyService from "@telicent-oss/ontologyservice";
+import OntologyService from "@national-digital-twin/ontologyservice";
 
 const ontologyService = new OntologyService(
   "http://localhost:3030/",
@@ -87,5 +87,5 @@ Developer notes:
 
 ## API
 
-- [Ontology Service API docs](https://telicent-oss.github.io/rdf-libraries/ontology-service/docs/)
-- [RDF Service API docs](https://telicent-oss.github.io/rdf-libraries/rdf-service/docs/)
+- [Ontology Service API docs]()
+- [RDF Service API docs]()

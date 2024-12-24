@@ -7,7 +7,7 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'index.ts'),
-      name: '@telicent-oss/ontologyservice',
+      name: '@national-digital-twin/ontologyservice',
     }
   },
   plugins: [dtsPlugin]

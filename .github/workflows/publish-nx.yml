@@ -20,28 +20,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: 'https://registry.npmjs.org/'
-          scope: 'telicent-oss'
-          token: ${{ secrets.NPM_REGISTRY_TOKEN }}
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: 'national-digital-twin'
+          token: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn install --frozen-lockfile
       - run: |
-          npx nx run @telicent-oss/rdfservice:build
+          npx nx run @national-digital-twin/rdfservice:build
           cd ./packages/RdfService
           local_version=$(node -p "require('./package.json').version")
           published_version=$(npm view $(node -p "require('./package.json').name") version || echo "0.0.0")
           if [ "$published_version" != "$local_version" ]; then
-            npm publish --access public --provenance
+            npm publish --access restricted --provenance
           else
             echo "No changes in version. Skipping publish."
           fi
           cd -
       - run: |
-          npx nx run @telicent-oss/ontologyservice:build
+          npx nx run @national-digital-twin/ontologyservice:build
           cd ./packages/OntologyService
           local_version=$(node -p "require('./package.json').version")
           published_version=$(npm view $(node -p "require('./package.json').name") version || echo "0.0.0")
           if [ "$published_version" != "$local_version" ]; then
-            npm publish --access public --provenance
+            npm publish --access restricted --provenance
           else
             echo "No changes in version. Skipping publish."
           fi
@@ -52,7 +52,7 @@ jobs:
           local_version=$(node -p "require('./package.json').version")
           published_version=$(npm view $(node -p "require('./package.json').name") version || echo "0.0.0")
           if [ "$published_version" != "$local_version" ]; then
-            npm publish --access public --provenance
+            npm publish --access restricted --provenance
           else
             echo "No changes in version. Skipping publish."
           fi
@@ -63,7 +63,7 @@ jobs:
           local_version=$(node -p "require('./package.json').version")
           published_version=$(npm view $(node -p "require('./package.json').name") version || echo "0.0.0")
           if [ "$published_version" != "$local_version" ]; then
-            npm publish --access public --provenance
+            npm publish --access restricted --provenance
           else
             echo "No changes in version. Skipping publish."
           fi
@@ -74,7 +74,7 @@ jobs:
           local_version=$(node -p "require('./package.json').version")
           published_version=$(npm view $(node -p "require('./package.json').name") version || echo "0.0.0")
           if [ "$published_version" != "$local_version" ]; then
-            npm publish --access public --provenance
+            npm publish --access restricted --provenance
           else
             echo "No changes in version. Skipping publish."
           fi

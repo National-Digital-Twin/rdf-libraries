@@ -8,7 +8,7 @@ module.exports = defineConfig({
     minify: false,
     lib: {
       entry: resolve(__dirname, 'index.ts'),
-      name: '@telicent-oss/rdfservice',
+      name: '@national-digital-twin/rdfservice',
     }
   },
   plugins: [dtsPlugin]

@@ -1,5 +1,5 @@
 {
-  "name": "@telicent-oss/rdfservice",
+  "name": "@national-digital-twin/rdfservice",
   "version": "0.0.6-TELFE654.0",
   "private": false,
   "description": "RdfService is a helper library that abstracts away the complexity of interacting with RDF triplestores, providing basic CRUD abilities.",
@@ -26,13 +26,13 @@
     "open-docs": "open ./dist/docs/index.html",
     "test": "jest test",
     "build": "rm -rf ./dist && vite build",
-    "publish": "npm publish --access public --provenance",
-    "publish:dry-run": "npm publish --access public --provenance --dry-run",
+    "publish": "npm publish --access restricted",
+    "publish:dry-run": "npm publish --access restricted --dry-run",
     "lint": "eslint **/*.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telicent-oss/rdf-libraries.git"
+    "url": "git+https://github.com/National-Digital-Twin/rdf-libraries.git"
   },
   "publishConfig": {
     "registry": "https://www.npmjs.com/"

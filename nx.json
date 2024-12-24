@@ -5,8 +5,8 @@
   },
   "release": {
     "projects": [
-      "@telicent-oss/rdfservice",
-      "@telicent-oss/ontologyservice",
+      "@national-digital-twin/rdfservice",
+      "@national-digital-twin/ontologyservice",
       "@telicent-oss/ies-service",
       "@telicent-oss/catalogservice",
       "@telicent-oss/ontology-find-icon-helper"

@@ -142,3 +142,6 @@ packages/.DS_Store
 # IDE
 .vscode
 gitignored
+
+# npmrc file
+.npmrc

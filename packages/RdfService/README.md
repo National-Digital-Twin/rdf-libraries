@@ -7,12 +7,12 @@ For futher information on how to use the library see the [API documentation](REA
 ## Install
 
 ```bash
-yarn add @telicent-oss/rdfservice
+yarn add @national-digital-twin/rdfservice
 ```
 
 ## Usage
 ```tsx
-import RdfService from "@telicent-oss/rdfservice";
+import RdfService from "@national-digital-twin/rdfservice";
 
 const rdfService = new RdfService("http://localhost:3030/", "ontology");
 
@@ -21,4 +21,4 @@ const diagrams = await rdfService.runQuery(query);
 
 ## API
 
-* [RDF Service API docs](https://telicent-oss.github.io/rdf-libraries/rdf-service/docs/)
+* [RDF Service API docs]()

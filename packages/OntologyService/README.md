@@ -8,13 +8,13 @@ For further information on how to use the library see the [API Documentation](RE
 ## Install
 
 ```bash
-yarn install @telicent-oss/ontologyservice
+yarn install @national-digital-twin/ontologyservice
 ```
 
 ## Usage
 
 ```tsx
-import OntologyService from "@telicent-oss/ontologyservice";
+import OntologyService from "@national-digital-twin/ontologyservice";
 
 const ontologyService = new OntologyService("http://localhost:3030/", "ontology");
 
@@ -23,4 +23,4 @@ const diagrams = await ontologyService.getAllDiagrams();
 
 ## API
 
-* [Ontology Service API docs](https://telicent-oss.github.io/rdf-libraries/ontology-service/docs/)
+* [Ontology Service API docs]()

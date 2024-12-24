@@ -13,14 +13,14 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Telicent-oss/rdf-libraries.git"
+    "url": "git+https://github.com/National-Digital-Twin/rdf-libraries.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Telicent-oss/rdf-libraries/issues"
+    "url": "https://github.com/National-Digital-Twin/rdf-libraries/issues"
   },
-  "homepage": "https://github.com/Telicent-oss/rdf-libraries#readme",
+  "homepage": "https://github.com/National-Digital-Twin/rdf-libraries#readme",
   "dependencies": {
     "chalk": "^5.3.0",
     "tslib": "^2.6.3"
